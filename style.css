@@ -1,16 +1,47 @@
 *{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 #main{font-size: 28px;}
 img{vertical-align:middle;}
-html{background: linear-gradient(180deg, #d3fffd, #b7f1f0); min-height: 100vh;}
+html{background: linear-gradient(180deg, #383b3b, #000000); min-height: 100vh;}
 h1,h2,h3{text-align: center;}
-h1{color: #580b3e; font-size: 36px;}
-h2{color: #580b3e; font-size: 26px;}
-h3{color: #580b3e; font-size: 22px;}
-hr{color:inherit; margin: 1rem 0;}
-p,ol,ul{color: #333; }
-ol,ul{font-size: 18px;}
+h1{font-size: 36px;}
+h2{font-size: 26px;}
+h3{font-size: 22px;}
 p{font-size: 20px;}
+ol,ul{font-size: 18px;}
+hr{color:inherit; margin: 1rem 0;}
+h4,p,ol,ul{color: #ffffff; }
+h1,h2,h3 {color: #cf2095;}
+a {
+    color: #cf2095;
+}
+
 .text-center{text-align: center;}
 .text-left{text-align: left;}
 .text-right{text-align: right;}
 .container{display: block; margin: auto; width: min(70%, 500px);}
+
+.header { grid-area: header;}
+.step1 { grid-area: step1;}
+
+.step2 { 
+    grid-area: step2; 
+    padding: 20px;
+    border-left: #ffffff solid 1px; 
+    border-right: #ffffff solid 1px;
+}
+.step3 { grid-area: step3;}
+.header1 {grid-area: header1; text-align: center;}
+.header2 {grid-area: header2; text-align: center;}
+.header3 {grid-area: header3; text-align: center;}
+
+.parent{
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'header1 header2 header3'
+    'step1 step2 step3';
+    gap:10px;
+    justify-content: space-evenly;
+}
+
+
