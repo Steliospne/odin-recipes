@@ -1,4 +1,4 @@
-*{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
+/* *{font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif}
 #main{font-size: 28px;}
 img{vertical-align:middle;}
 html{background: linear-gradient(180deg, #383b3b, #000000); min-height: 100vh;}
@@ -42,6 +42,155 @@ a {
     'step1 step2 step3';
     gap:10px;
     justify-content: space-evenly;
+} */
+
+*{
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 20px;
+    font-size: 18px;
+    font-family: "Agbalumo";
 }
 
+html {
+    background-image:radial-gradient(#383b3b, #000000);
+}
 
+a, li::marker {
+    color: #cf2095
+}
+
+a:hover {
+    color: #fff;
+}
+
+ol > li {
+    padding: 15px 10px;
+}
+
+ul > li{
+    padding: 5px 10px;
+}
+
+.index-header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-title {
+    color: #cf2095;
+    font-size: 3rem;
+}
+
+.index-img-container > img {
+    width: 600px;
+    border: 5px solid #fff;
+    padding: 0;
+}
+
+.index-list-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.index-recipe-list li,
+.index-recipe-list a {
+    font-size: 1.5rem;
+}
+
+.index-list-container li::marker {
+    color: #fff;
+}
+
+.recipe-book{
+    display: flex;
+    flex-direction: column;
+}
+
+.header-container{
+    display: flex;
+    padding: 2em 0;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.header{
+    font-size: 2.5rem;
+    color: #cf2095;
+}
+
+.index-img-container,
+.recipe-img-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+}
+
+.recipe-img > img{
+    width: 450px;
+    border: 5px solid #fff;
+    padding: 0;
+}
+
+.description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #cf2095;
+}
+
+.description{
+    font-size: 1rem;
+    color: #fff;
+}
+
+.recipe-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipe-ingredients{
+    display: flex;
+    flex-direction: column;  
+    flex: 1;
+    border-right :1px solid #fff;    
+}
+
+.recipe-ingredients-header,
+.recipe-steps-header,
+.ingredient-part-1,
+.ingredient-part-2,
+.ingredient-part-3,
+.recipe-steps-1,
+.recipe-steps-2,
+.recipe-steps-3  {
+    font-size: 1.25rem;
+    align-self: center;
+    color: #cf2095;
+}
+
+.recipe-ingredients-header,
+.recipe-steps-header{
+    font-size: 2rem;
+}
+
+.recipe-steps{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.part-1,
+.part-2,
+.part-3,
+.step-1,
+.step-2,
+.step-3 {
+    color: #fff;
+}
