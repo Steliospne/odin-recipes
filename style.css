@@ -24,8 +24,6 @@ html {
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 h1 {
@@ -51,6 +49,11 @@ li {
     padding: 15px 10px;
 }
 
+img {
+    width: min(150px, 450px);
+    border: 5px solid #fff;
+    padding: 0;
+}
 
 .recipe-book {
     display: flex;
@@ -124,12 +127,6 @@ li {
 
 }
 
-img {
-    width: 450px;
-    border: 5px solid #fff;
-    padding: 0;
-}
-
 .description-container {
     display: flex;
     flex-direction: column;
@@ -143,7 +140,6 @@ img {
     font-size: 1rem;
     color: #fff;
     max-width: 75ch;
-    min-width: 45ch;
 }
 
 .recipe-container {
@@ -174,5 +170,4 @@ img {
 .step-3 {
     color: #fff;
     max-width: 75ch;
-    min-width: 45ch;
 }
